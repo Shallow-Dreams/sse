@@ -1,0 +1,27 @@
+#include  <stdio.h>
+#define N 40
+#include <string.h>
+int main()
+{
+	int i;
+	long a[8];
+	for(i=0;i<8;i++)
+	{
+		scanf("%ld",&a[i]);
+		
+	}
+	for(i=0;i<8;i++)
+	{
+		if(a[i]!=a[7-i])
+		{
+			printf("no,it is not\n");
+			break;
+		}
+		
+		if(i==7)
+			printf("yes,it is\n");
+		
+		
+	}
+    return 0;
+}
