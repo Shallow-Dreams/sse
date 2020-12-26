@@ -1,0 +1,30 @@
+#include  <stdio.h>
+#define N 40
+#include <string.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main()
+{
+	char a[N],i,k,x,t;
+	printf("Input a string:\n");
+	gets(a);
+	k=strlen(a);
+	for(i=0;i<k-1;i++)
+	{
+		if(a[i]!=a[k-i-1])
+		{
+			printf("This string is not a plalindrome.");
+			break;
+		}
+		
+		t--; 
+	}
+	if(i>=k-1)
+	printf("This string is a plalindrome.");
+    
+    return 0;
+
+}
+
+
