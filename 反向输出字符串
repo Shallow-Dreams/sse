@@ -1,0 +1,29 @@
+#include  <stdio.h>
+#define N 40
+#include <string.h>
+int main()
+{
+	int i=0,t=0; 
+	char Str[N];
+	char a;
+	printf("请输入一个字符串：");
+	scanf("%s",Str);
+
+	t=strlen(Str);
+	for(i=0;;i++)
+	{
+		a=Str[i];
+		Str[i]=Str[t-1];
+		Str[t-1]=a;
+		t--;
+		if(i>=t-1)
+		break;
+		  
+	}
+	
+
+	
+		printf("该字符串逆反后为%s！\n",Str);
+	
+    return 0;
+}
