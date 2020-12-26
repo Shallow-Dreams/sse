@@ -1,0 +1,25 @@
+#include  <stdio.h>
+#define N 40
+#include <string.h>
+	int a[30];
+int main()
+{
+	int i,t;
+	int b[6];
+	t=1;
+	for(i=0;i<30;i++)
+	{
+		a[i]=2*t;
+		t++;
+	}
+	for(i=0;i<6;i++)
+	{
+		b[i]=(a[5*(i)+0]+a[5*(i)+1]+a[5*(i)+2]+a[5*(i)+3]+a[5*(i)+4])/5;
+	}
+	for(i=0;i<6;i++)
+	{
+		printf("%6d",b[i]);
+	}
+    return 0;
+}
+
