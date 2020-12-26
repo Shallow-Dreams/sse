@@ -1,0 +1,35 @@
+/*#include  <stdio.h>
+#define N 40
+#include <string.h>
+int main()
+{
+	int i,b,c;
+	int a[10];
+	printf("Enter %d numbers:",10);
+	for(i=0;i<10;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("In reverse order:");
+	for(i=9;i>=0;i--)
+	{
+		printf(" %d",a[i]);
+	}
+	
+    return 0;
+}*/
+#include <stdio.h>
+#define M 5
+main()
+{   int a[M]={1,2,3,4,5};
+    int i,j,*t; 
+    i=0;j=M-1;
+    while(i<3)
+    {   
+        t=*(a+i);
+        *(a+i)=*(a+j);
+        *(a+j)=t;
+        i++;j--; 
+    }
+    for(i=0;i<M;i++) printf("%d",a[i]);
+}
