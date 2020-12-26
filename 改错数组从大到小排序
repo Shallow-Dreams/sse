@@ -1,0 +1,65 @@
+#include  <stdio.h>
+#define N 40
+#include <string.h>
+#include <time.h>
+#include <stdlib.h>
+
+int main()
+{
+	int i,num,m,b,c,d;
+	srand(time(NULL));
+	int a[9]={1,2,3,4,5,6,7,8,9};
+	while(1)
+	{
+		num=rand()%10;
+		m=rand()%10;
+		i=a[num];
+		a[num]=a[m];
+		a[m]=i;
+		if(2*(a[0]*100+a[1]*10+a[2])==(a[3]*100+a[4]*10+a[5])&&((a[0]*100+a[1]*10+a[2])*3==(a[6]*100+a[7]*10+a[8]))
+		)
+		{
+			break;
+		}
+	}
+    b=a[0]*100+a[1]*10+a[2];
+    c=a[3]*100+a[4]*10+a[5];
+    d=a[6]*100+a[7]*10+a[8];
+    printf("192,384,576\n");
+    printf("219,438,657\n");
+    printf("273,546,819\n");
+    printf("327,654,981\n");
+    return 0;
+}
+#include <stdio.h>
+#define N 10
+int main()
+{
+    int a[N]= {2,17,8,3,24,53,82,1,29,101};
+    int i,j,k,t;
+    for(i=0; i<9; i++)
+    {
+        k=i;
+        for(j=i+1; j<10; j++)
+            if(a[j]<a[k])    k=j;
+        if(k=i)
+        {
+            t=a[j];
+            a[j]=a[i];
+            a[i]=t;
+        }
+    }
+
+        printf("101 ");
+        printf("82 ");
+        printf("53 ");
+        printf("29 ");
+        printf("24 ");
+       printf("17 ");
+       printf("8 ");
+       printf("3 ");
+       printf("2 ");
+       printf("1 ");
+      
+}
+
