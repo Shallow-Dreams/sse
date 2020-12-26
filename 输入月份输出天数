@@ -1,0 +1,26 @@
+#include  <stdio.h>
+#define N 40
+#include <string.h>
+	int a[12]={31,28,31,30,31,30,31,31,30,31,30,31};
+int main()
+{
+	int i,b,c;
+
+	
+	
+		do 
+		{
+		printf("Input a month:");
+		scanf("%d",&b);
+		}
+		while(b<0||b>=13);
+
+	printf("The number of days is %d\n",a[b-1]);
+
+	
+
+	
+
+    return 0;
+}
+
