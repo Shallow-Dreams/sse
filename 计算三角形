@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h> 
+int main()
+{
+  	float a,b,c;
+  	double area,s;
+  	printf("Input a,b,c:");
+  	scanf("%f,%f,%f",&a,&c,&b);
+  	
+  	if( (a+b>c)&&(a+c>b)&&(c+b>a))
+	  {	  
+	  	 s=(a+b+c)/2;
+	  	 area=sqrt(s*(s-a)*(s-b)*(s-c)) ;
+		printf("area=%.4f\n",area);			  		  		  
+	  }
+	  else 
+	  {
+
+	  		printf("It is not a triangle\n");	
+	  }
+	  
+    return 0;
+}
