@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h> 
+#include <stdio.h>
+#include <string.h>
+#include <math.h> 
+int main()
+{
+  	int x,y;
+  	double area,s;
+  	printf("Input a, b:");
+  	scanf("%d,%d",&x,&y);
+  	
+  	
+	if(x>y)
+	  {
+	  	
+	  		printf("max = %d\n",x);	
+	  }
+	  else 
+	  {
+	  	
+	  		printf("max = %d\n",y);	
+	  }
+	  
+    return 0;
+}
