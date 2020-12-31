@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h> 
+#include <stdio.h>
+#include <string.h>
+#include <math.h> 
+int main()
+{
+  	int x,y;
+  	double area,s;
+  	printf("input the score :");
+  	scanf("%d",&x);
+  	
+  	
+	if(x>=90 && x<=100)
+	  {
+	  	
+	  		printf("score=%d-->A\n",x);	
+	  }
+	  else if(x>=80 && x<90)
+	  {
+	  	
+	  		printf("score=%d-->B\n",x);	
+	  } 
+	  else if(x>=70 && x<80)
+	  {
+	  	
+	  		printf("score=%d-->C\n",x);	
+	  }
+	  else if(x>=60 && x<70)
+	  {
+	  	
+	  		printf("score=%d-->D\n",x);	
+	  }
+	  else if(x>=0 && x<60)
+	  {
+	  	
+	  		printf("score=%d-->E\n",x);	
+	  }
+	  else 
+	  {
+	  	
+	  		printf("score=%d is error!\n",x);	
+	  }
+	  
+    return 0;
+}
